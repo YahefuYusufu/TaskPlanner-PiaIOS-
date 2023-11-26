@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		35DD0EC72B13685D0071E6BC /* TaskPlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DD0EC62B13685D0071E6BC /* TaskPlannerApp.swift */; };
-		35DD0EC92B13685D0071E6BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DD0EC82B13685D0071E6BC /* ContentView.swift */; };
+		35DD0EC92B13685D0071E6BC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DD0EC82B13685D0071E6BC /* MainView.swift */; };
 		35DD0ECB2B1368600071E6BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35DD0ECA2B1368600071E6BC /* Assets.xcassets */; };
 		35DD0ECE2B1368600071E6BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35DD0ECD2B1368600071E6BC /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		35DD0EC32B13685D0071E6BC /* TaskPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35DD0EC62B13685D0071E6BC /* TaskPlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPlannerApp.swift; sourceTree = "<group>"; };
-		35DD0EC82B13685D0071E6BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		35DD0EC82B13685D0071E6BC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		35DD0ECA2B1368600071E6BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35DD0ECD2B1368600071E6BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,8 +51,12 @@
 		35DD0EC52B13685D0071E6BC /* TaskPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				35DD0ED82B1369420071E6BC /* Views */,
+				35DD0EC82B13685D0071E6BC /* MainView.swift */,
+				35DD0ED72B1369380071E6BC /* ViewModels */,
+				35DD0ED62B13692C0071E6BC /* Models */,
+				35DD0ED52B13691B0071E6BC /* Components */,
 				35DD0EC62B13685D0071E6BC /* TaskPlannerApp.swift */,
-				35DD0EC82B13685D0071E6BC /* ContentView.swift */,
 				35DD0ECA2B1368600071E6BC /* Assets.xcassets */,
 				35DD0ECC2B1368600071E6BC /* Preview Content */,
 			);
@@ -65,6 +69,34 @@
 				35DD0ECD2B1368600071E6BC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		35DD0ED52B13691B0071E6BC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		35DD0ED62B13692C0071E6BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		35DD0ED72B1369380071E6BC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		35DD0ED82B1369420071E6BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35DD0EC92B13685D0071E6BC /* ContentView.swift in Sources */,
+				35DD0EC92B13685D0071E6BC /* MainView.swift in Sources */,
 				35DD0EC72B13685D0071E6BC /* TaskPlannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

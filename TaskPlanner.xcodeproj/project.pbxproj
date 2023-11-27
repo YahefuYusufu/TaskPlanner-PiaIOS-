@@ -13,6 +13,8 @@
 		35A270882B149E660089D30A /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 35A270872B149E660089D30A /* FirebaseAnalyticsSwift */; };
 		35A2708A2B149E660089D30A /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 35A270892B149E660089D30A /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		35A2708C2B149E660089D30A /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 35A2708B2B149E660089D30A /* FirebaseAppCheck */; };
+		35A270902B14AC7B0089D30A /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2708F2B14AC7B0089D30A /* Items.swift */; };
+		35A270922B14AF1E0089D30A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A270912B14AF1E0089D30A /* User.swift */; };
 		35DD0EC72B13685D0071E6BC /* TaskPlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DD0EC62B13685D0071E6BC /* TaskPlannerApp.swift */; };
 		35DD0EC92B13685D0071E6BC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DD0EC82B13685D0071E6BC /* MainView.swift */; };
 		35DD0ECB2B1368600071E6BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35DD0ECA2B1368600071E6BC /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		35A2707C2B149B370089D30A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		35A2708F2B14AC7B0089D30A /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		35A270912B14AF1E0089D30A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		35DD0EC32B13685D0071E6BC /* TaskPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35DD0EC62B13685D0071E6BC /* TaskPlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPlannerApp.swift; sourceTree = "<group>"; };
 		35DD0EC82B13685D0071E6BC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -64,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				35DD0ED82B1369420071E6BC /* Views */,
-				35DD0ED72B1369380071E6BC /* ViewModels */,
 				35DD0ED62B13692C0071E6BC /* Models */,
 				35DD0ED52B13691B0071E6BC /* Components */,
 				35DD0EC62B13685D0071E6BC /* TaskPlannerApp.swift */,
@@ -93,15 +96,10 @@
 		35DD0ED62B13692C0071E6BC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				35A2708F2B14AC7B0089D30A /* Items.swift */,
+				35A270912B14AF1E0089D30A /* User.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		35DD0ED72B1369380071E6BC /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		35DD0ED82B1369420071E6BC /* Views */ = {
@@ -193,7 +191,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35A270922B14AF1E0089D30A /* User.swift in Sources */,
 				35DD0EC92B13685D0071E6BC /* MainView.swift in Sources */,
+				35A270902B14AC7B0089D30A /* Items.swift in Sources */,
 				35DD0EC72B13685D0071E6BC /* TaskPlannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

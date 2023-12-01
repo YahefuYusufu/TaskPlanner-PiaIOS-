@@ -9,14 +9,16 @@ import SwiftUI
 
 struct MainView: View {
    var body: some View {
-      NavigationView {
          
          
          LoginView()
             .preferredColorScheme(.dark)
-            .navigationBarHidden(true)
-      }
+    
    }
+   
+//   @ViewBuilder var accountView: some View {
+//    
+//   }
 }
 
 #Preview {

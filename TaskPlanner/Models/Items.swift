@@ -13,6 +13,12 @@ struct Items: Codable, Identifiable {
    var dueDate = Date.now + (60*60*24)
    var remainderIsOn = false
    var createDate: TimeInterval
-   var isDine = false
+   var isDine:  Bool
    var notes = ""
+   
+   mutating func setDone(_ state:Bool) {
+      isDine = false
+   }
+   
 }
+

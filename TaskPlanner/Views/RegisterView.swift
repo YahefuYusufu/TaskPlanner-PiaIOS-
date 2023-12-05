@@ -91,7 +91,6 @@ struct RegisterView: View {
          })
          Spacer(minLength: 0)
       }
-      
       .background(Color("bg").ignoresSafeArea(.all,edges: .all))
    }
 }

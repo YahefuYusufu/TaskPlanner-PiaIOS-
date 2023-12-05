@@ -16,19 +16,13 @@ struct TLButton: View {
       Button {
          action()
       } label: {
-        
-          
-            
+         ZStack{
+            RoundedRectangle(cornerRadius: 10)
+               .foregroundColor(background)
             Text(buttonName)
-               .fontWeight(.heavy)
-               .foregroundStyle(.white)
-               
-               .padding(.vertical)
-               .frame(width: UIScreen.main.bounds.width - 150)
-               
-               .background(.blue)
-               .clipShape(Capsule())
-         
+               .foregroundStyle(Color.white)
+               .bold()
+         }
       }
    }
 }

@@ -29,10 +29,10 @@ struct LoginView: View {
                   Text("Log In")
                      .font(.title)
                      .fontWeight(.bold)
-                     .foregroundColor(.white)
+                     .foregroundColor(Color.gray)
                   
                   Text("Place Log IN")
-                     .foregroundColor(Color.white.opacity(0.5))
+                     .foregroundColor(Color.gray.opacity(0.5))
                })
                
             }
@@ -40,39 +40,41 @@ struct LoginView: View {
             .padding(.leading,15)
             
             
-            Form {
+            VStack {
                if !viewModel.errorMessage.isEmpty {
                   Text(viewModel.errorMessage)
-                     .foregroundStyle(Color.white)
+                     .foregroundStyle(Color.red)
                }
                HStack{
                   Image(systemName: "envelope")
                      .font(.title2)
-                     .foregroundColor(.white)
+                     .foregroundColor(Color.gray)
                      .frame(width: 35)
                   
                   TextField("EMAIL",text:$viewModel.email)
                      .foregroundColor(.white)
+                     
                   
                }
                .padding()
                .background(Color.white.opacity(0.12))
                .cornerRadius(15)
-               //               .padding(.horizontal)
+                              .padding(.horizontal)
                HStack{
                   Image(systemName: "lock")
                      .font(.title2)
-                     .foregroundColor(.white)
+                     .foregroundColor(Color.gray)
                      .frame(width: 35)
                   
                   SecureField("PASSWORD",text:$viewModel.password)
                      .foregroundColor(.white)
+                    
                   
                }
                .padding()
                .background(Color.white.opacity(0.12))
                .cornerRadius(15)
-               //               .padding(.horizontal)
+                              .padding(.horizontal)
                .padding(.top)
                
                //Log in button
@@ -90,24 +92,25 @@ struct LoginView: View {
                .padding(.horizontal)
                .padding(.top)
             }
+            
         
          //bottom
          HStack {
             Text("Do You Have Account?")
-               .foregroundStyle(.white.opacity(0.6))
+               .foregroundStyle(Color.gray.opacity(0.6))
             
             NavigationLink("Sign Up",destination: RegisterView())
                .foregroundColor(.blue)
-            
          }
          .padding(.vertical)
-         
-         //           Spacer(minLength: 0)
-         
+//                    Spacer(minLength: 0)
+
          }
+         .background(Color("bg").ignoresSafeArea(.all,edges: .all))
       }
-      //         .background(Color("bg").ignoresSafeArea(.all,edges: .all))
+    
    }
+   
 }
 
 #Preview {

@@ -24,4 +24,12 @@ class MainViewModel: ObservableObject {
    public var isSignedIn: Bool {
       return Auth.auth().currentUser != nil
    }
+   
+   func logOut() {
+      do {
+         try Auth.auth().signOut()
+      } catch {
+         print("error")
+      }
+   }
 }

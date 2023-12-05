@@ -12,16 +12,25 @@ struct MainView: View {
    
    var body: some View {
       if viewModel.isSignedIn, !viewModel.currentUserID.isEmpty {
-         TodoListView()
+       accountView
       } else {
          LoginView()
-            .preferredColorScheme(.dark)
       }
    }
    
-//   @ViewBuilder var accountView: some View {
-//    
-//   }
+   @ViewBuilder
+   var accountView: some View {
+      TabView {
+         TodoListView(userId: viewModel.currentUserID)
+            .tabItem {
+               Label("Plans",systemImage: "doc.plaintext.fill")
+            }
+         ProfileView()
+            .tabItem{
+               Label("Profile",systemImage: "person.circle")
+            }
+      }
+   }
 }
 
 #Preview {

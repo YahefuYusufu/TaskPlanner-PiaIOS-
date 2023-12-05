@@ -7,7 +7,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
          <BreakpointContent
-            uuid = "1ED52064-B60E-4F78-B581-4094FD2862E8"
+            uuid = "8A4A8061-9354-44E8-8BE4-DAB17CD5F76F"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -23,7 +23,7 @@
             </Actions>
             <Locations>
                <Location
-                  uuid = "1ED52064-B60E-4F78-B581-4094FD2862E8 - ba3ad5676a792f38"
+                  uuid = "8A4A8061-9354-44E8-8BE4-DAB17CD5F76F - ba3ad5676a792f38"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"

@@ -8,13 +8,12 @@
 import Foundation
 
 struct Items: Codable, Identifiable {
-   var id: String?
-   var item = ""
-   var dueDate = Date.now + (60*60*24)
-   var remainderIsOn = false
+   let id: String
+   let title: String
+   var dueDate: TimeInterval
    var createDate: TimeInterval
    var isDine:  Bool
-   var notes = ""
+   let notes: String
    
    mutating func setDone(_ state:Bool) {
       isDine = false

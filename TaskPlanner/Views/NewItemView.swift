@@ -20,6 +20,8 @@ struct NewItemView: View {
          Form {
             //Title
             TextField("Name",text: $viewModel.title)
+            //notes
+            TextField("Name",text: $viewModel.notes)
             //Duew Date
             DatePicker("Due Date", selection: $viewModel.dueDate)
                .datePickerStyle(GraphicalDatePickerStyle())

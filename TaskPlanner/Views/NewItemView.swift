@@ -19,12 +19,12 @@ struct NewItemView: View {
             .foregroundColor(Color.white)
          Form {
             //Title
-            TextField("Name",text: $viewModel.title)
-            //notes
-            TextField("Name",text: $viewModel.notes)
+            TextField("Tasks",text: $viewModel.title)
             //Duew Date
             DatePicker("Due Date", selection: $viewModel.dueDate)
-               .datePickerStyle(GraphicalDatePickerStyle())
+               .datePickerStyle(CompactDatePickerStyle())
+            //notes
+            TextField("Todos",text: $viewModel.notes)
             //Button
             TLButton(
                buttonName: "Save",

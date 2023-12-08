@@ -34,7 +34,7 @@ class NewItemViewViewModel: ObservableObject {
          title: title,
          dueDate: dueDate.timeIntervalSince1970,
          createDate: Date().timeIntervalSince1970,
-         isDine: false,
+         isDone: false,
          notes: notes
       )
       

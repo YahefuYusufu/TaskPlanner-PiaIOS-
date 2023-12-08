@@ -12,11 +12,11 @@ struct Items: Codable, Identifiable {
    let title: String
    var dueDate: TimeInterval
    var createDate: TimeInterval
-   var isDine:  Bool
-   let notes: String
+   var isDone:  Bool
+   var notes: String
    
    mutating func setDone(_ state:Bool) {
-      isDine = false
+      isDone = state
    }
    
 }

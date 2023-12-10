@@ -108,7 +108,6 @@ struct LoginView: View {
          }
          .background(Color("bg").ignoresSafeArea(.all,edges: .all))
       }
-    
    }
    
 }

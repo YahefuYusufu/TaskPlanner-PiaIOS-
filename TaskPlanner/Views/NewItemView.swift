@@ -20,11 +20,18 @@ struct NewItemView: View {
          Form {
             //Title
             TextField("Tasks",text: $viewModel.title)
+               .textFieldStyle(PlainTextFieldStyle())
+               .padding(.vertical,10)
             //Duew Date
             DatePicker("Due Date", selection: $viewModel.dueDate)
                .datePickerStyle(CompactDatePickerStyle())
+               .padding(.vertical,10)
             //notes
             TextField("Todos",text: $viewModel.notes)
+               .textFieldStyle(PlainTextFieldStyle())
+               .padding(.vertical,10)
+               
+            
             //Button
             TLButton(
                buttonName: "Save",
@@ -36,16 +43,20 @@ struct NewItemView: View {
                } else {
                   viewModel.showAlert = true
                }
+               
             }
             .padding()
+            
          }
+         .foregroundColor(.cyan)
          .alert(isPresented: $viewModel.showAlert) {
             Alert(title: Text("ERROR"),
                   message: Text("Please fill in all fields...")
             )
+            
          }
+         
       }
-      //      .background(Color("bg").ignoresSafeArea(.all,edges: .all))
    }
 }
 

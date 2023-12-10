@@ -15,16 +15,16 @@ struct TodoListItemView: View {
          VStack(alignment: .leading) {
             Text(item.title)
                .font(.title)
-               .foregroundStyle(Color(.green))
+               .foregroundStyle(Color(.white))
                .bold()
             Text(item.notes)
                .font(.title2)
-               .foregroundStyle(Color(.secondaryLabel))
+               .foregroundStyle(Color(.green))
             Text("\(Date(timeIntervalSince1970: item.dueDate).formatted(date: .abbreviated, time: .shortened))")
                .font(.subheadline)
-               .foregroundStyle(Color(.cyan))
-               .bold()
+               .foregroundStyle(Color(.blue))
          }
+         .padding(8)
          Spacer()
          Button(action: {
             viewModel.toggleIsDone(item: item)
@@ -34,8 +34,11 @@ struct TodoListItemView: View {
                .padding(.horizontal)
                .font(.title2)
          })
+         .padding(.horizontal,2)
       }
-      .padding(.horizontal)
+      .background(Color("bg").ignoresSafeArea(.all,edges: .all))
+      .cornerRadius(15)
+      .padding(.horizontal,12)
       
    }
 }

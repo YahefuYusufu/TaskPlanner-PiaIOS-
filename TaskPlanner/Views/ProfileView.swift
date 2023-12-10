@@ -35,6 +35,7 @@ struct ProfileView: View {
        .onAppear {
           viewModel.fetchUser()
        }
+       
     }
    
    @ViewBuilder
@@ -50,32 +51,51 @@ struct ProfileView: View {
       VStack {
          HStack {
             Text("Name: ")
+               .font(.title2)
+               .foregroundStyle(Color.white)
                .bold()
             Text(user.name)
+               .foregroundStyle(Color.white)
+               .font(.title3)
          }
          .padding()
          HStack {
             Text("Email: ")
                .bold()
+               .font(.title2)
+               .foregroundStyle(Color.white)
             Text(user.email)
+               .foregroundStyle(Color.white)
+               .font(.title3)
          }
          .padding()
          HStack {
             Text("Member since: ")
                .bold()
+               .font(.title2)
+               .font(.title3)
+               .foregroundStyle(Color.white)
             Text("\(Date(timeIntervalSince1970: user.joined).formatted(date: .abbreviated, time: .shortened))")
+               .foregroundStyle(Color.white)
          }
          .padding()
       }
+      .background(Color("bg").ignoresSafeArea(.all,edges: .all))
+      .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+
       .padding()
       //Sing out
       Button("Log Out") {
          viewModel.logOut()
       }
-      .tint(.red)
+      .tint(.white)
+      .bold()
       .padding()
+      .background(.blue)
+      .cornerRadius(15)
       Spacer()
    }
+   
 }
 
 #Preview {

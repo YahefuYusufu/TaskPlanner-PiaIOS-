@@ -34,6 +34,7 @@ struct TodoListView: View {
                      }
                }
                .listStyle(PlainListStyle())
+               .listRowSeparator(.automatic)
             }
             .navigationTitle("Plane Something")
             .toolbar {
@@ -46,6 +47,7 @@ struct TodoListView: View {
                })
             }
          }
+         
          .sheet(isPresented: $viewModel.showingNewItemView){
             NewItemView(newItemPresented: $viewModel.showingNewItemView)
          }

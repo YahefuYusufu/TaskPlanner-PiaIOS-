@@ -514,16 +514,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.prgacademy.TaskPlanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"SECTORDER_FLAGS[arch=*]" = (
-					expr,
-					"-l",
-					"objc++",
-					"-O",
-					"--",
-					"[[UIWindow",
-					"keyWindow]",
-					"_autolayoutTrace]\n",
-				);
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

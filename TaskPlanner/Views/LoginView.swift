@@ -85,7 +85,7 @@ struct LoginView: View {
                      .fontWeight(.heavy)
                      .foregroundStyle(.white)
                      .padding(.vertical)
-                     .frame(width: UIScreen.main.bounds.width - 100)
+                     .frame(width:200,height: 40)
                      .background(.blue)
                      .clipShape(Capsule())
                })

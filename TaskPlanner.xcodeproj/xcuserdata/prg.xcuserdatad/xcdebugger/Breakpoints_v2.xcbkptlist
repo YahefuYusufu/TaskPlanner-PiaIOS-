@@ -13,14 +13,6 @@
             continueAfterRunningActions = "No"
             symbolName = "UIViewAlertForUnsatisfiableConstraints"
             moduleName = "">
-            <Actions>
-               <BreakpointActionProxy
-                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
-                  <ActionContent
-                     consoleCommand = "expr -l objc++ -O -- [[UIWindow keyWindow] _autolayoutTrace]&#10;">
-                  </ActionContent>
-               </BreakpointActionProxy>
-            </Actions>
             <Locations>
                <Location
                   uuid = "8A4A8061-9354-44E8-8BE4-DAB17CD5F76F - ba3ad5676a792f38"

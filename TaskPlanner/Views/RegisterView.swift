@@ -89,6 +89,8 @@ struct RegisterView: View {
          TLButton(buttonName: "Create Account", background: .blue, action: {
             viewModel.register()
          })
+         .frame(width: 200, height: 40, alignment: .center)
+         .clipShape(Capsule())
          Spacer(minLength: 0)
       }
       .background(Color("bg").ignoresSafeArea(.all,edges: .all))
